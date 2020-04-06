@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DentalHospitalDatabase"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FF00A1EE">
         <Button x:Name="btnDentalCheck" Content="Dental Check-In" HorizontalAlignment="Left" Margin="90,185,0,0" VerticalAlignment="Top" Width="185" Height="50" FontSize="20" FontWeight="Bold" Click="btnDentalCheck_Click"/>
         <Button x:Name="btnMedicalCheck" Content="Medical Check-in" HorizontalAlignment="Left" Margin="510,185,0,0" VerticalAlignment="Top" Width="185" Height="50" FontSize="20" FontWeight="Bold" Click="btnMedicalCheck_Click"/>
         <Label x:Name="lblWelcome" Content="Welcome To The Hospital of Health" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
