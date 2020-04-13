@@ -37,5 +37,12 @@ namespace DentalHospitalDatabase
             createAppt.Show();
             this.Close();
         }
+
+        private void btnPayment_Click(object sender, RoutedEventArgs e)
+        {
+            Payment payment = new Payment();
+            payment.Show();
+            this.Close();
+        }
     }
 }

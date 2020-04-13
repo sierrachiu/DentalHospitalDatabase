@@ -15,33 +15,25 @@ using System.Windows.Shapes;
 namespace DentalHospitalDatabase
 {
     /// <summary>
-    /// Interaction logic for Medical.xaml
+    /// Interaction logic for Login_Screen.xaml
     /// </summary>
-    public partial class Medical : Window
+    public partial class Login_Screen : Window
     {
-        public Medical()
+        public Login_Screen()
         {
             InitializeComponent();
         }
 
-        private void btnNewAppt_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            CreateAppt createAppt = new CreateAppt();
-            createAppt.Show();
-            this.Close();
+            txtUNInput.Clear();
+            txtPassInput.Clear();
         }
 
-        private void btnReturn_Click(object sender, RoutedEventArgs e)
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
-            this.Close();
-        }
-
-        private void btnPayment_Click(object sender, RoutedEventArgs e)
-        {
-            Payment payment = new Payment();
-            payment.Show();
             this.Close();
         }
     }

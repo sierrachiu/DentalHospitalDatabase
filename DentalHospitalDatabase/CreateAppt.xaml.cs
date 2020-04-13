@@ -24,12 +24,15 @@ namespace DentalHospitalDatabase
             InitializeComponent();
         }
 
-        private void btnPayment_Click(object sender, RoutedEventArgs e)
+        /*
+         * This button isn't needed I think*************************************
+         * 
+         * private void btnPayment_Click(object sender, RoutedEventArgs e)
         {
             Payment payment = new Payment();
             payment.Show();
             this.Close();
-        }
+        }*/
 
         private void btnReturnHome_Click(object sender, RoutedEventArgs e)
         {
@@ -40,9 +43,11 @@ namespace DentalHospitalDatabase
 
         private void btnCreateAppt_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
+            MessageBox.Show("Your appointment has been scheduled.");
+
+            /*MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
-            this.Close();
+            this.Close();*/
         }
     }
 }

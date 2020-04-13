@@ -39,11 +39,14 @@ namespace DentalHospitalDatabase
             this.Close();
         }
 
-        private void btnNewPatient_Click(object sender, RoutedEventArgs e)
+        /*
+         * Probably don't need this button on this screen**************************************************
+         * 
+         * private void btnNewPatient_Click(object sender, RoutedEventArgs e)
         {
             New_Patient new_PatientCheckin = new New_Patient();
             new_PatientCheckin.Show();
             this.Close();
-        }
+        }*/
     }
 }

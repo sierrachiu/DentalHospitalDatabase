@@ -6,10 +6,11 @@
         xmlns:local="clr-namespace:DentalHospitalDatabase"
         mc:Ignorable="d"
         Title="Dental" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="btnReturn" Content="Return" HorizontalAlignment="Left" Margin="10,359,0,0" VerticalAlignment="Top" Width="185" Height="50" FontSize="20" FontWeight="Bold" Click="btnReturn_Click"/>
+    <Grid Background="#FF53BDF0">
+        <Button x:Name="btnReturn" Content="Return" HorizontalAlignment="Left" Margin="75,100,0,0" VerticalAlignment="Top" Width="200" Height="250" FontSize="20" FontWeight="Bold" Click="btnReturn_Click"/>
         <Label x:Name="lblDental" Content="Dental" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
-        <Button x:Name="btnNewAppt" Content="New Appointment" HorizontalAlignment="Left" Margin="598,359,0,10" Width="184" FontSize="20" FontWeight="Bold" Click="btnNewAppt_Click"/>
+        <Button x:Name="btnNewAppt" Content="New Appointment" HorizontalAlignment="Left" Margin="300,100,0,69" Width="200" Height="250" FontSize="20" FontWeight="Bold" Click="btnNewAppt_Click"/>
+        <Button x:Name="btnPayment" Content="Payment" HorizontalAlignment="Left" Margin="525,100,0,0" VerticalAlignment="Top" Width="200" Height="250" FontSize="20" FontWeight="Bold" Click="btnPayment_Click"/>
 
     </Grid>
 </Window>
