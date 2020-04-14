@@ -49,5 +49,10 @@ namespace DentalHospitalDatabase
             mainWindow.Show();
             this.Close();*/
         }
+
+        private void WinCreate_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            grid2.Focus();
+        }
     }
 }

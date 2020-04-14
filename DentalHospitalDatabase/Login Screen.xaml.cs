@@ -27,7 +27,7 @@ namespace DentalHospitalDatabase
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             txtUNInput.Clear();
-            txtPassInput.Clear();
+            txtPWInput.Clear();
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
@@ -35,6 +35,29 @@ namespace DentalHospitalDatabase
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
+        }
+
+        private void TxtUNInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            txtLabelUser.Visibility = Visibility.Visible;
+            if (txtUNInput.Text.Length > 0)
+            {
+                txtLabelUser.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void TxtPassInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            txtLabelPass.Visibility = Visibility.Visible;
+            if (txtPWInput.Text.Length > 0)
+            {
+                txtLabelPass.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void WinLogin_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            grid1.Focus();
         }
     }
 }
