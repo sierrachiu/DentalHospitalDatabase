@@ -8,8 +8,27 @@
         Title="Hospital of Health - Payment" Height="450" Width="800">
     <Grid Background="#FFBEEAFF">
         <Label x:Name="lblPayment" Content="Payments" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
-        <Button x:Name="btnReturnHome" Content="Return Home" HorizontalAlignment="Left" Margin="10,359,0,0" VerticalAlignment="Top" Width="184" Height="50" FontSize="20" FontWeight="Bold" Click="btnReturnHome_Click"/>
-        <Button x:Name="btnCompleteInfo" Content="Complete" HorizontalAlignment="Center" Margin="304,359,304,0" VerticalAlignment="Top" Width="184" FontSize="20" Height="50" FontWeight="Bold" Click="btnCompleteInfo_Click"/>
+        <Button x:Name="btnReturnHome" Content="Return Home" HorizontalAlignment="Left" Margin="10,359,0,0" VerticalAlignment="Top" Background="Transparent" Width="158" Height="43" FontWeight="Bold" FontSize="20" Click="btnReturnHome_Click" BorderBrush="#FF2363D0" BorderThickness="1"/>
+        <Button x:Name="btnCompleteInfo" Content="Complete" HorizontalAlignment="Center" Margin="600,359,9.6,0" VerticalAlignment="Top" Width="184" FontSize="20" Height="50" FontWeight="Bold" Click="btnCompleteInfo_Click"/>
 
     </Grid>
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="Transparent">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Transparent"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
 </Window>

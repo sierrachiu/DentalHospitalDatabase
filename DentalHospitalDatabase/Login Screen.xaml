@@ -13,15 +13,34 @@
             <ColumnDefinition Width="91*"/>
         </Grid.ColumnDefinitions>
         <Label Content="Login" HorizontalAlignment="Left" Margin="120,129,0,0" VerticalAlignment="Top" Width="100" FontSize="30" FontFamily="Segoe UI Black" FontWeight="Bold" Grid.Column="1"/>
-        <TextBox x:Name="txtUserName" IsReadOnly="True" HorizontalAlignment="Left" Height="30" Margin="135,199,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="170" Background="#FFDDDDDD" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="txtPassword" IsReadOnly="True" HorizontalAlignment="Left" Height="30" Margin="135,254,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="170" Background="#FFDDDDDD" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="txtUNInput" HorizontalAlignment="Left" Height="30" Margin="83,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" TextChanged="TxtUNInput_TextChanged" Grid.Column="1" FontSize="14" />
-        <TextBox x:Name="txtPWInput" HorizontalAlignment="Left" Height="30" Margin="83,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" TextChanged="TxtPassInput_TextChanged" Grid.Column="1" FontSize="14" TextAlignment="Justify"/>
-        <TextBlock HorizontalAlignment="Left"  Height="24" Margin="87,259,0,0" VerticalAlignment="Top" Text="Enter Password" Foreground="Gray" x:Name="txtLabelPass" Width="85" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="87,206,0,0" Text="Enter Username" Foreground="Gray" x:Name="txtLabelUser" Width="85" Grid.Column="1" VerticalAlignment="Top" Height="23"/>
-        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="189,322,0,0" VerticalAlignment="Top" Width="185" Height="50" FontSize="24" FontFamily="Segoe UI Black" Click="btnLogin_Click" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnClearFields" Content="Clear Fields" HorizontalAlignment="Left" Margin="176,322,0,0" VerticalAlignment="Top" Width="185" Height="50" FontSize="24" FontFamily="Segoe UI Black" Click="Button_Click" Grid.Column="1"/>
-        <Label Content="Welcome to Hospital of Health" HorizontalAlignment="Center" Margin="122,38,0.4,0" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe UI Black" FontWeight="Bold" Grid.ColumnSpan="2" Height="69" Width="580"/>
+        <TextBox x:Name="txtUserName" IsReadOnly="True" HorizontalAlignment="Left" Height="30" Margin="58,190,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="170" Background="Transparent" BorderBrush="Transparent" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Right"/>
+        <TextBox x:Name="txtPassword" IsReadOnly="True" HorizontalAlignment="Left" Height="30" Margin="58,245,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="170" Background="Transparent" BorderBrush="Transparent" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Right"/>
+        <TextBox x:Name="txtUNInput" HorizontalAlignment="Left" Height="30" Margin="6,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" TextChanged="TxtUNInput_TextChanged" Grid.Column="1" FontSize="14" />
+        <TextBox x:Name="txtPWInput" HorizontalAlignment="Left" Height="30" Margin="6,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" TextChanged="TxtPassInput_TextChanged" Grid.Column="1" FontSize="14" TextAlignment="Justify"/>
+        <TextBlock HorizontalAlignment="Left"  Height="24" Margin="10,250,0,0" VerticalAlignment="Top" Text="Enter Password" Foreground="Gray" x:Name="txtLabelPass" Width="85" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,197,0,0" Text="Enter Username" Foreground="Gray" x:Name="txtLabelUser" Width="85" Grid.Column="1" VerticalAlignment="Top" Height="23"/>
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="189,322,0,0" VerticalAlignment="Top" Width="185" Height="50" FontSize="24" Background="Transparent" BorderBrush="#FF2363D0" FontFamily="Segoe UI Black" Click="btnLogin_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnClearFields" Content="Clear Fields" HorizontalAlignment="Left" Margin="176,322,0,0" VerticalAlignment="Top" Width="185" Height="50" Background="Transparent" BorderBrush="#FF2363D0" FontSize="24" FontFamily="Segoe UI Black" Click="Button_Click" Grid.Column="1"/>
+        <Label Content="Welcome to Hospital of Health" HorizontalAlignment="Center" Margin="84,38,28.6,0" VerticalAlignment="Top" FontSize="40" FontFamily="Segoe UI Black" FontWeight="Bold" Grid.ColumnSpan="3" Height="69" Width="681"/>
 
     </Grid>
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="Transparent">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Transparent"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
 </Window>
