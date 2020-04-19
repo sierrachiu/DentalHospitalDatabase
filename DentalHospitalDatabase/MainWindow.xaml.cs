@@ -39,6 +39,13 @@ namespace DentalHospitalDatabase
             this.Close();
         }
 
+        private void btnNewPatient_Click(object sender, RoutedEventArgs e)
+        {
+            New_Patient newPatCreate = new New_Patient();
+            newPatCreate.Show();
+            this.Close();
+        }
+
         /*
          * Probably don't need this button on this screen**************************************************
          * 

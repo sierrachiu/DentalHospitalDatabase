@@ -43,5 +43,9 @@ namespace DentalHospitalDatabase
             grid3.Focus();
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Your patient profile has been created.");
+        }
     }
 }

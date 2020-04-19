@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="Hospital of Health - CreateAppt" Height="450" Width="800" MouseDown="WinCreate_MouseDown">
     <Grid Name="grid2" Focusable="True"  Background="#FFBEEAFF">
-        <Button x:Name="btnReturnHome" Content="Return Home" HorizontalAlignment="Left" Margin="10,359,0,0" VerticalAlignment="Top" Background="Transparent" Width="158" Height="43" FontWeight="Bold" FontSize="20" Click="btnReturnHome_Click" BorderBrush="#FF2363D0" BorderThickness="1"/>
+        <Button x:Name="btnReturnHome" Content="Return Home" HorizontalAlignment="Left" Margin="10,366,0,0" VerticalAlignment="Top" Background="Transparent" Width="158" Height="43" FontWeight="Bold" FontSize="20" Click="btnReturnHome_Click" BorderBrush="#FF2363D0" BorderThickness="1"/>
         <Label x:Name="lblCreateAppt" Content="Create Appointment" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
-        <Button x:Name="btnCreateAppt" Content="Create Appointment"  HorizontalAlignment="Center" Margin="268,338,309.6,0" VerticalAlignment="Top" Width="216" FontSize="20" FontWeight="Bold" Height="50" Background="Transparent" BorderBrush="#FF2363D0" BorderThickness="1" Click="btnCreateAppt_Click"/>
+        <Button x:Name="btnCreateAppt" Content="Create Appointment"  HorizontalAlignment="Center" Margin="566,359,10,0" VerticalAlignment="Top" Width="216" FontSize="20" FontWeight="Bold" Height="50" Background="Transparent" BorderBrush="#FF2363D0" BorderThickness="1" Click="btnCreateAppt_Click"/>
         <TextBox x:Name="txtFirstName" Height="30" Margin="141,80,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="127" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" HorizontalAlignment="Left" TextAlignment="Right"/>
         <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="30" Margin="141,115,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="127" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
         <TextBox x:Name="txtMiddleInitial" HorizontalAlignment="Left" Height="30" Margin="141,150,0,0" TextWrapping="Wrap" Text="Middle Initial" VerticalAlignment="Top" Width="127" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
@@ -19,7 +19,28 @@
         <TextBox x:Name="txtFNameInput" HorizontalAlignment="Left" Height="30" Margin="268,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
         <TextBox x:Name="txtLNameInput" HorizontalAlignment="Left" Height="30" Margin="268,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
         <TextBox x:Name="txtMInitialInput" HorizontalAlignment="Left" Height="30" Margin="268,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
-        <ComboBox x:Name="cmbDocName" HorizontalAlignment="Left" Margin="268,185,0,0" VerticalAlignment="Top" Width="360" Height="30" IsReadOnly="True"/>
+        <ComboBox x:Name="cmbDocName" HorizontalAlignment="Left" Margin="268,185,0,0" VerticalAlignment="Top" Width="360" Height="30" IsReadOnly="True">
+            <ComboBoxItem Content="Randall Figueroa"/>
+            <ComboBoxItem Content="Jimmy Miller"/>
+            <ComboBoxItem Content="Teri Cooper"/>
+            <ComboBoxItem Content="Jim Silva"/>
+            <ComboBoxItem Content="Orville Ramirez"/>
+            <ComboBoxItem Content="Shawna Medina"/>
+            <ComboBoxItem Content="Regina Craig"/>
+            <ComboBoxItem Content="Tabitha Castillo"/>
+            <ComboBoxItem Content="Virgil Rogers"/>
+            <ComboBoxItem Content="Jose Dunn"/>
+            <ComboBoxItem Content="Ronnie Little"/>
+            <ComboBoxItem Content="Sheri Gill"/>
+            <ComboBoxItem Content="Erika Lyons"/>
+            <ComboBoxItem Content="Beth Copeland"/>
+            <ComboBoxItem Content="Claire Santiago"/>
+            <ComboBoxItem Content="James Bee"/>
+            <ComboBoxItem Content="Rachel Procrass"/>
+            <ComboBoxItem Content="Sierra Chiu"/>
+            <ComboBoxItem Content="Roman Nayda"/>
+            <ComboBoxItem Content="Brian Tu"/>
+        </ComboBox>
         <DatePicker x:Name="dpAppDate" HorizontalAlignment="Left" Margin="268,220,0,0" VerticalAlignment="Top" Height="30" Width="360"/>
         <ComboBox x:Name="cmbAppTime" HorizontalAlignment="Left" Margin="268,255,0,0" VerticalAlignment="Top" Width="360" Height="30">
             <ComboBoxItem Content="0800"/>

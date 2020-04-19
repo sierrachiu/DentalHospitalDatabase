@@ -25,7 +25,7 @@ namespace DentalHospitalDatabase
         }
 
         /*
-         * This button isn't needed I think*************************************
+         * This button isnt needed I think
          * 
          * private void btnPayment_Click(object sender, RoutedEventArgs e)
         {
