@@ -7,25 +7,25 @@
         mc:Ignorable="d"
         Title="Hospital of Health - New_Patient" Height="450" Width="800" MouseDown="WinNewPatient_MouseDown">
     <Grid Name="grid3" Background="#FFBEEAFF" Focusable="True">
-        <Button x:Name="btnReturn" Content="Return" HorizontalAlignment="Left" Margin="10,366,0,0" VerticalAlignment="Top" Background="Transparent" Width="158" Height="43" FontWeight="Bold" FontSize="20" Click="btnReturn_Click" BorderBrush="#FF2363D0" BorderThickness="1"/>
-        <Label x:Name="lblNewPatient" Content="New Patient" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="52" Width="204" FontSize="30" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <Button Content="New Appointment" HorizontalAlignment="Left" Margin="294,362,0,0" VerticalAlignment="Top" Width="204" Click="Button_Click" Height="50" FontSize="20" FontWeight="Bold" BorderBrush="#FF2363D0" BorderThickness="1" Background="Transparent"/>
-        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="30" Margin="141,70,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="135" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
-        <TextBox x:Name= "txtLAstName" HorizontalAlignment="Left" Height="30" Margin="141,105,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="135" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
-        <TextBox x:Name="txtDOB" HorizontalAlignment="Left" Height="30" Margin="141,175,0,0" TextWrapping="Wrap" Text="Date of Birth" VerticalAlignment="Top" Width="135" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
-        <TextBox x:Name="txtGender" HorizontalAlignment="Left" Height="30" Margin="141,210,0,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top" Width="135" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
-        <TextBox x:Name="txtSSN" HorizontalAlignment="Left" Height="30" Margin="141,245,0,0" TextWrapping="Wrap" Text="Social Security" VerticalAlignment="Top" Width="135" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
-        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="30" Margin="141,280,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="135" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
-        <TextBox x:Name="txtMiddleInitial" HorizontalAlignment="Left" Height="30" Margin="141,140,0,0" TextWrapping="Wrap" Text="Middle Initial" VerticalAlignment="Top" Width="135" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
-        <TextBox x:Name="txtFNInput" HorizontalAlignment="Left" Height="30" Margin="276,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
-        <TextBox x:Name="txtLNInput" HorizontalAlignment="Left" Height="30" Margin="276,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
-        <TextBox x:Name="txtMIInput" HorizontalAlignment="Left" Height="30" Margin="276,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
-        <TextBox x:Name="txtDOBInput" HorizontalAlignment="Left" Height="30" Margin="276,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
-        <TextBox x:Name="txtGenderInput" HorizontalAlignment="Left" Height="30" Margin="276,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
-        <TextBox x:Name="txtSSNInput" HorizontalAlignment="Left" Height="30" Margin="276,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
-        <TextBox x:Name="txtAddressInput" HorizontalAlignment="Left" Height="30" Margin="276,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
-        <TextBox x:Name="txtDocName" HorizontalAlignment="Left" Height="30" Margin="149,315,0,0" TextWrapping="Wrap" Text="Doctor Name" VerticalAlignment="Top" Width="127" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
-        <ComboBox x:Name="cmbDocName" HorizontalAlignment="Left" Margin="276,315,0,0" VerticalAlignment="Top" Width="360" Height="30" IsReadOnly="True">
+        <Button x:Name="btnReturn" Content="Return" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top" Background="Transparent" Width="158" Height="43" FontWeight="Bold" FontSize="20" Click="btnReturn_Click" BorderBrush="#FF2363D0" BorderThickness="1"/>
+        <Label x:Name="lblNewPatient" Content="New Patient" HorizontalAlignment="Center" Margin="294,37,295.6,0" VerticalAlignment="Top" Height="52" Width="204" FontSize="30" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" RenderTransformOrigin="0.359,1.127"/>
+        <Button Content="New Appointment" HorizontalAlignment="Left" Margin="294,350,0,0" VerticalAlignment="Top" Width="204" Click="Button_Click" Height="50" FontSize="20" FontWeight="Bold" BorderBrush="#FF2363D0" BorderThickness="1" Background="Transparent"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="30" Margin="34,120,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="83" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
+        <TextBox x:Name= "txtLAstName" HorizontalAlignment="Left" Height="30" Margin="34,160,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="83" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
+        <TextBox x:Name="txtDOB" HorizontalAlignment="Left" Height="30" Margin="34,239,0,0" TextWrapping="Wrap" Text="Date of Birth" VerticalAlignment="Top" Width="83" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
+        <TextBox x:Name="txtGender" HorizontalAlignment="Left" Height="30" Margin="34,280,0,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top" Width="83" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
+        <TextBox x:Name="txtSSN" HorizontalAlignment="Left" Height="30" Margin="340,120,0,0" TextWrapping="Wrap" Text="Social Security" VerticalAlignment="Top" Width="115" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="30" Margin="340,160,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="115" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
+        <TextBox x:Name="txtMiddleInitial" HorizontalAlignment="Left" Height="30" Margin="19,200,0,0" TextWrapping="Wrap" Text="Middle Initial" VerticalAlignment="Top" Width="98" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
+        <TextBox x:Name="txtFNInput" HorizontalAlignment="Left" Height="30" Margin="116,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+        <TextBox x:Name="txtLNInput" HorizontalAlignment="Left" Height="30" Margin="116,160,20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+        <TextBox x:Name="txtMIInput" HorizontalAlignment="Left" Height="30" Margin="116,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+        <TextBox x:Name="txtDOBInput" HorizontalAlignment="Left" Height="30" Margin="116,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+        <TextBox x:Name="txtGenderInput" HorizontalAlignment="Left" Height="30" Margin="116,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+        <TextBox x:Name="txtSSNInput" HorizontalAlignment="Left" Height="30" Margin="454,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="304"/>
+        <TextBox x:Name="txtAddressInput" HorizontalAlignment="Left" Height="30" Margin="454,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="304"/>
+        <TextBox x:Name="txtDocName" HorizontalAlignment="Left" Height="30" Margin="347,200,0,0" TextWrapping="Wrap" Text="Doctor Name" VerticalAlignment="Top" Width="108" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
+        <ComboBox x:Name="cmbDocName" HorizontalAlignment="Left" Margin="454,200,0,0" VerticalAlignment="Top" Width="304" Height="30" IsReadOnly="True">
             <ComboBoxItem Content="Randall Figueroa"/>
             <ComboBoxItem Content="Jimmy Miller"/>
             <ComboBoxItem Content="Teri Cooper"/>
@@ -47,7 +47,17 @@
             <ComboBoxItem Content="Roman Nayda"/>
             <ComboBoxItem Content="Brian Tu"/>
         </ComboBox>
-        <Button Content="Create Patient" HorizontalAlignment="Left" Margin="624,362,0,0" VerticalAlignment="Top" Background="Transparent" Width="158" Height="43" FontWeight="Bold" FontSize="20" Click="Button_Click_1"/>
+        <Button Content="Create Patient" HorizontalAlignment="Left" Margin="622,350,-0.4,0" VerticalAlignment="Top" Background="Transparent" Width="160" Height="43" FontWeight="Bold" FontSize="20" Click="Button_Click_1"/>
+        <ComboBox x:Name="cmbInsName" HorizontalAlignment="Left" Margin="454,240,0,0" VerticalAlignment="Top" Width="304" Height="30" IsReadOnly="True">
+            <ComboBoxItem Content="BlueCross"/>
+            <ComboBoxItem Content="Cigna"/>
+            <ComboBoxItem Content="Centene"/>
+            <ComboBoxItem Content="Humana"/>
+            <ComboBoxItem Content="UnitedHealth"/>
+            <ComboBoxItem Content="WellCare"/>
+            <ComboBoxItem Content="KaiserFoundation"/>
+        </ComboBox>
+        <TextBox x:Name="txtIns" HorizontalAlignment="Left" Height="30" Margin="347,240,0,0" TextWrapping="Wrap" Text="Insurance" VerticalAlignment="Top" Width="108" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
 
     </Grid>
     <Window.Resources>

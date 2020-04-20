@@ -8,8 +8,8 @@
         Title="Hospital of Health - Payment" Height="450" Width="800">
     <Grid Background="#FFBEEAFF">
         <Label x:Name="lblPayment" Content="Payments" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
-        <Button x:Name="btnReturnHome" Content="Return Home" HorizontalAlignment="Left" Margin="10,359,0,0" VerticalAlignment="Top" Background="Transparent" Width="158" Height="43" FontWeight="Bold" FontSize="20" Click="btnReturnHome_Click" BorderBrush="#FF2363D0" BorderThickness="1"/>
-        <Button x:Name="btnCompleteInfo" Content="Complete" HorizontalAlignment="Center" Margin="600,359,9.6,0" VerticalAlignment="Top" Width="184" FontSize="20" Height="50" FontWeight="Bold" Click="btnCompleteInfo_Click"/>
+        <Button x:Name="btnReturnHome" Content="Return Home" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top" Background="Transparent" Width="160" Height="43" FontWeight="Bold" FontSize="20" Click="btnReturnHome_Click" BorderBrush="#FF2363D0" BorderThickness="1"/>
+        <Button x:Name="btnCompleteInfo" Content="Complete" HorizontalAlignment="Center" Margin="622,350,-0.4,0" VerticalAlignment="Top" Width="160" FontSize="20" Height="43" FontWeight="Bold" Click="btnCompleteInfo_Click"/>
 
     </Grid>
     <Window.Resources>

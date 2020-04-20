@@ -8,16 +8,16 @@
         Title="MainWindow" Height="450" Width="800">
 
     <Grid Background="#FFBEEAFF">
-        <Button x:Name="btnDentalCheck" Background="Transparent" Margin="-9,97,502.6,59"  FontSize="20" FontWeight="Bold" BorderBrush="Transparent" Click="btnDentalCheck_Click" >
-            <StackPanel Orientation="Vertical" Width="277" Height="261">
-                <Image Source="/DentalHospitalDatabase;component/images/Dental.png" Height="219" Margin="0,0,-0.2,0"/>
+        <Button x:Name="btnDentalCheck" Background="Transparent" Margin="4,89,522.6,67"  FontSize="20" FontWeight="Bold" BorderBrush="Transparent" Click="btnDentalCheck_Click" >
+            <StackPanel Orientation="Vertical" Width="267" Height="264">
+                <Image Source="/DentalHospitalDatabase;component/images/Dental.png" Height="219" Margin="0,0,9.8,0"/>
                 <TextBlock TextWrapping="Wrap" Text="Dental Check-in" RenderTransformOrigin="0.255,0.051" Margin="63,0,50.8,0" Height="32" Width="163" VerticalAlignment="Center"/>
             </StackPanel>
         </Button>
-        <Button x:Name="btnMedicalCheck" HorizontalAlignment="Left" Margin="245,87,0,0" VerticalAlignment="Top" Width="306" Height="264" BorderBrush="Transparent" FontSize="20" FontWeight="Bold" Click="btnMedicalCheck_Click" Background="Transparent">
-            <StackPanel Orientation="Vertical" Width="316" Height="269">
-                <Image Source="/DentalHospitalDatabase;component/images/Medical.png" Height="230" />
-                <TextBlock TextWrapping="Wrap" Text="Medical Check-in" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Button x:Name="btnMedicalCheck" HorizontalAlignment="Left" Margin="276,87,0,0" VerticalAlignment="Top" Width="275" Height="264" BorderBrush="Transparent" FontSize="20" FontWeight="Bold" Click="btnMedicalCheck_Click" Background="Transparent">
+            <StackPanel Orientation="Vertical" Width="266" Height="264">
+                <Image Source="/DentalHospitalDatabase;component/images/Medical.png" Height="226" Margin="10,0" />
+                <TextBlock TextWrapping="Wrap" Text="Medical Check-in" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="55,0,45.5,0" Height="30" Width="165"/>
             </StackPanel>
         </Button>
 
@@ -45,7 +45,7 @@
                 </TransformGroup>
             </Ellipse.RenderTransform>
         </Ellipse>
-        <Button x:Name="btnNewPatient" HorizontalAlignment="Left" Margin="553,87,0,0" VerticalAlignment="Top" Width="231" Height="256" BorderBrush="Transparent" Background="Transparent" Click="btnNewPatient_Click"/>
+        <Button x:Name="btnNewPatient" HorizontalAlignment="Left" Margin="556,87,0,0" VerticalAlignment="Top" Width="228" Height="264" BorderBrush="Transparent" Background="Transparent" Click="btnNewPatient_Click"/>
 
     </Grid>
 
