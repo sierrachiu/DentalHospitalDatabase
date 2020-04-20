@@ -19,8 +19,9 @@ namespace DentalHospitalDatabase
     /// </summary>
     public partial class New_Patient : Window
     {
+
         public New_Patient()
-        {
+        { 
             InitializeComponent();
         }
 
@@ -45,7 +46,16 @@ namespace DentalHospitalDatabase
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Your patient profile has been created.");
+            if (txtFNInput.Text == "" || txtLNInput.Text =="" || txtMIInput.Text == "" || txtDOBInput.Text == "" || txtGenderInput.Text == "" || txtSSNInput.Text == "" || txtAddressInput.Text == "" || cmbDocName.Text == "" || cmbInsName.Text == "")
+            {
+                MessageBox.Show("Please complete the required fields");
+            }
+            else
+            {
+                MessageBox.Show("Your patient profile has been created.");
+            }
         }
     }
 }
+
+                    

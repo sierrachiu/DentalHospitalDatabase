@@ -32,9 +32,16 @@ namespace DentalHospitalDatabase
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
+            if (txtUNInput.Text == "" || txtPWInput.Text == "")
+            {
+                MessageBox.Show("Please enter your Username and Password to continue");
+            }
+            else
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close();
+            }
         }
 
         private void TxtUNInput_TextChanged(object sender, TextChangedEventArgs e)

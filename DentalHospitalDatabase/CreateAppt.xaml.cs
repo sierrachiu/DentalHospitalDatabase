@@ -43,7 +43,14 @@ namespace DentalHospitalDatabase
 
         private void btnCreateAppt_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Your appointment has been scheduled.");
+            if (txtFNameInput.Text == "" || txtLNameInput.Text == "" || txtMInitialInput.Text == "" || cmbDocName.Text == "" || dpAppDate.Text == "" || cmbAppTime.Text == "")
+            {
+                MessageBox.Show("Please complete the required fields");
+            }
+            else
+            {
+                MessageBox.Show("Your appointment has been scheduled.");
+            }
 
             /*MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
