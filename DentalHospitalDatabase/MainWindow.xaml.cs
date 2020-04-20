@@ -46,6 +46,13 @@ namespace DentalHospitalDatabase
             this.Close();
         }
 
+        private void BtnLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            Login_Screen login = new Login_Screen();
+            login.Show();
+            this.Close();
+        }
+
         /*
          * Probably don't need this button on this screen**************************************************
          * 

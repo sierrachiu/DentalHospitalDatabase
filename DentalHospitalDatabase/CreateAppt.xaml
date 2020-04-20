@@ -8,18 +8,16 @@
         Title="Hospital of Health - CreateAppt" Height="450" Width="800" MouseDown="WinCreate_MouseDown">
     <Grid Name="grid2" Focusable="True"  Background="#FFBEEAFF">
         <Button x:Name="btnReturnHome" Content="Return Home" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top" Background="Transparent" Width="158" Height="43" FontWeight="Bold" FontSize="20" Click="btnReturnHome_Click" BorderBrush="#FF2363D0" BorderThickness="1"/>
-        <Label x:Name="lblCreateAppt" Content="Create Appointment" Margin="268,24,227.6,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <Label x:Name="lblCreateAppt" Content="Create Appointment" Margin="268,24,212.6,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Width="313"/>
         <Button x:Name="btnCreateAppt" Content="Create Appointment"  HorizontalAlignment="Center" Margin="561,350,31.6,0" VerticalAlignment="Top" Width="201" FontSize="20" FontWeight="Bold" Height="43" Background="Transparent" BorderBrush="#FF2363D0" BorderThickness="1" Click="btnCreateAppt_Click"/>
         <TextBox x:Name="txtFirstName" BorderThickness="0" Height="30" Margin="141,90,0,0" TextWrapping="Wrap" Text="First Name*" VerticalAlignment="Top" Width="127" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" HorizontalAlignment="Left" TextAlignment="Right"/>
         <TextBox x:Name="txtLastName" BorderThickness="0" HorizontalAlignment="Left" Height="30" Margin="141,130,0,0" TextWrapping="Wrap" Text="Last Name*" VerticalAlignment="Top" Width="127" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
-        <TextBox x:Name="txtMiddleInitial" BorderThickness="0" HorizontalAlignment="Left" Height="30" Margin="141,170,0,0" TextWrapping="Wrap" Text="Middle Initial" VerticalAlignment="Top" Width="127" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
         <TextBox x:Name="txtDocName" BorderThickness="0" HorizontalAlignment="Left" Height="30" Margin="141,210,0,0" TextWrapping="Wrap" Text="Doctor Name" VerticalAlignment="Top" Width="127" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
         <TextBox x:Name="txtAppDate" BorderThickness="0" HorizontalAlignment="Left" Height="30" Margin="141,250,0,0" TextWrapping="Wrap" Text="Appointment Date*" VerticalAlignment="Top" Width="127" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
         <TextBox x:Name="txtAppTime" BorderThickness="0" HorizontalAlignment="Left" Height="30" Margin="141,290,0,0" TextWrapping="Wrap" Text="Appointment Time*" VerticalAlignment="Top" Width="127" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
-        <TextBox x:Name="txtRQFields" HorizontalAlignment="Left" Height="23" Margin="269,334,0,0" TextWrapping="Wrap" Text="(Required Fields*)" VerticalAlignment="Top" Width="120" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Center"/>
+        <TextBox x:Name="txtRQFields" BorderThickness="0" HorizontalAlignment="Left" Height="23" Margin="269,334,0,0" TextWrapping="Wrap" Text="(Required Fields*)" VerticalAlignment="Top" Width="120" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Center"/>
         <TextBox x:Name="txtFNameInput" HorizontalAlignment="Left" Height="30" Margin="268,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
         <TextBox x:Name="txtLNameInput" HorizontalAlignment="Left" Height="30" Margin="268,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
-        <TextBox x:Name="txtMInitialInput" HorizontalAlignment="Left" Height="30" Margin="268,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
         <ComboBox x:Name="cmbDocName" HorizontalAlignment="Left" Margin="268,210,0,0" VerticalAlignment="Top" Width="360" Height="30" IsReadOnly="True">
             <ComboBoxItem Content="Randall Figueroa"/>
             <ComboBoxItem Content="Jimmy Miller"/>
@@ -64,6 +62,8 @@
             <ComboBoxItem Content="1630"/>
             <ComboBoxItem Content="1700"/>
         </ComboBox>
+        <TextBox x:Name="txtMiddleInitial" BorderThickness="0" HorizontalAlignment="Left" Height="30" Margin="141,170,0,0" TextWrapping="Wrap" Text="Middle Initial" VerticalAlignment="Top" Width="127" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" IsReadOnly="True" TextAlignment="Right"/>
+        <TextBox x:Name="txtMInitialInput" BorderThickness="0" HorizontalAlignment="Left" Height="30" Margin="268,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
 
     </Grid>
     <Window.Resources>

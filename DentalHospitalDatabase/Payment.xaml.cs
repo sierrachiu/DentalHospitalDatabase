@@ -34,7 +34,10 @@ namespace DentalHospitalDatabase
         private void btnCompleteInfo_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Thank you for your payment.");
-            
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+
             /*MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();*/

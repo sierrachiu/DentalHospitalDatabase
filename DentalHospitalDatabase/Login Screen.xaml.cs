@@ -47,18 +47,22 @@ namespace DentalHospitalDatabase
         private void TxtUNInput_TextChanged(object sender, TextChangedEventArgs e)
         {
             txtLabelUser.Visibility = Visibility.Visible;
+            txtUNInput.Background = Brushes.Transparent;
             if (txtUNInput.Text.Length > 0)
             {
                 txtLabelUser.Visibility = Visibility.Hidden;
+                txtUNInput.Background = Brushes.White;
             }
         }
 
         private void TxtPassInput_TextChanged(object sender, TextChangedEventArgs e)
         {
             txtLabelPass.Visibility = Visibility.Visible;
+            txtPWInput.Background = Brushes.Transparent;
             if (txtPWInput.Text.Length > 0)
             {
                 txtLabelPass.Visibility = Visibility.Hidden;
+                txtPWInput.Background = Brushes.White;
             }
         }
 

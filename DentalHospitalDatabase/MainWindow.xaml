@@ -46,6 +46,7 @@
             </Ellipse.RenderTransform>
         </Ellipse>
         <Button x:Name="btnNewPatient" HorizontalAlignment="Left" Margin="556,87,0,0" VerticalAlignment="Top" Width="228" Height="264" BorderBrush="Transparent" Background="Transparent" Click="btnNewPatient_Click"/>
+        <Button x:Name="btnLogOut" Content="LogOut" FontSize="12" HorizontalAlignment="Left" Margin="709,10,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Height="28" Click="BtnLogOut_Click"/>
 
     </Grid>
 

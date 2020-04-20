@@ -46,13 +46,16 @@ namespace DentalHospitalDatabase
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (txtFNInput.Text == "" || txtLNInput.Text =="" || txtMIInput.Text == "" || txtDOBInput.Text == "" || txtGenderInput.Text == "" || txtSSNInput.Text == "" || txtAddressInput.Text == "" || cmbDocName.Text == "" || cmbInsName.Text == "")
+            if (txtFNInput.Text == "" || txtLNInput.Text =="" || txtDOBInput.Text == "" || txtSSNInput.Text == "" || txtAddressInput.Text == "" || cmbInsName.Text == "")
             {
                 MessageBox.Show("Please complete the required fields");
             }
             else
             {
                 MessageBox.Show("Your patient profile has been created.");
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close();
             }
         }
     }
