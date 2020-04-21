@@ -18,10 +18,11 @@
         <TextBlock x:Name="txtLabelUser" HorizontalAlignment="Left" Margin="6,190,0,0" Text="Enter Username" FontSize="16" Foreground="Gray" Padding="6, 3, 6, 3"  Width="360" Grid.Column="1" VerticalAlignment="Top" Height="30" Background="White"/>
         <TextBox x:Name="txtUNInput" Background="Transparent" HorizontalAlignment="Left" Height="30" Margin="6,190,0,0" Padding="3, 3, 3, 6" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" TextChanged="TxtUNInput_TextChanged" Grid.Column="1" FontSize="12" />
         <TextBlock HorizontalAlignment="Left"  Height="30" Margin="6,245,0,0" VerticalAlignment="Top" Background="White" FontSize="16" Padding="6, 3, 6, 3" Text="Enter Password" Foreground="Gray" x:Name="txtLabelPass" Width="360" Grid.Column="1"/>
-        <TextBox x:Name="txtPWInput" Background="Transparent" HorizontalAlignment="Left" Height="30" Padding="3, 3, 3, 6" Margin="6,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" TextChanged="TxtPassInput_TextChanged" Grid.Column="1" FontSize="14" TextAlignment="Justify"/>
+        <PasswordBox x:Name="pwbInput" HorizontalAlignment="Left" Margin="6,245,0,0" VerticalAlignment="Top" Width="360" Height="30" Background="Transparent"  Grid.Column="1" PasswordChanged="pwbInput_PasswordChanged" Padding="3, 3, 3, 6" FontSize="16"/>
         <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="189,322,0,0" VerticalAlignment="Top" Width="185" Height="50" FontSize="24" Background="Transparent" BorderBrush="#FF2363D0" FontFamily="Segoe UI Black" Click="btnLogin_Click" Grid.ColumnSpan="2"/>
         <Button x:Name="btnClearFields" Content="Clear Fields" HorizontalAlignment="Left" Margin="176,322,0,0" VerticalAlignment="Top" Width="185" Height="50" Background="Transparent" BorderBrush="#FF2363D0" FontSize="24" FontFamily="Segoe UI Black" Click="Button_Click" Grid.Column="1"/>
         <Label Content="Welcome to Hospital of Health" HorizontalAlignment="Center" Margin="84,38,28.6,0" VerticalAlignment="Top" FontSize="40" FontFamily="Segoe UI Black" FontWeight="Bold" Grid.ColumnSpan="3" Height="69" Width="681"/>
+
 
     </Grid>
     <Window.Resources>

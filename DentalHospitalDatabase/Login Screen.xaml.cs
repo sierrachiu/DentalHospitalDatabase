@@ -27,12 +27,12 @@ namespace DentalHospitalDatabase
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             txtUNInput.Clear();
-            txtPWInput.Clear();
+            pwbInput.Clear();
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (txtUNInput.Text == "" || txtPWInput.Text == "")
+            if (txtUNInput.Text == "" || pwbInput.Password.Length == 0)
             {
                 MessageBox.Show("Please enter your Username and Password to continue");
             }
@@ -55,14 +55,14 @@ namespace DentalHospitalDatabase
             }
         }
 
-        private void TxtPassInput_TextChanged(object sender, TextChangedEventArgs e)
+        private void pwbInput_PasswordChanged(object sender, RoutedEventArgs e)
         {
             txtLabelPass.Visibility = Visibility.Visible;
-            txtPWInput.Background = Brushes.Transparent;
-            if (txtPWInput.Text.Length > 0)
+            pwbInput.Background = Brushes.Transparent;
+            if (pwbInput.Password.Length > 0)
             {
                 txtLabelPass.Visibility = Visibility.Hidden;
-                txtPWInput.Background = Brushes.White;
+                pwbInput.Background = Brushes.White;
             }
         }
 
