@@ -64,6 +64,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Doctor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login Screen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -81,6 +85,9 @@
     </Compile>
     <Compile Include="Dental.xaml.cs">
       <DependentUpon>Dental.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor.xaml.cs">
+      <DependentUpon>Doctor.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login Screen.xaml.cs">
       <DependentUpon>Login Screen.xaml</DependentUpon>

@@ -10,6 +10,10 @@
         <Label x:Name="lblPayment" Content="Payments" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
         <Button x:Name="btnReturnHome" Content="Return Home" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top" Background="Transparent" Width="160" Height="43" FontWeight="Bold" FontSize="20" Click="btnReturnHome_Click" BorderBrush="#FF2363D0" BorderThickness="1"/>
         <Button x:Name="btnCompleteInfo" Content="Complete" HorizontalAlignment="Center" Margin="622,350,-0.4,0" VerticalAlignment="Top" Width="160" FontSize="20" Height="43" FontWeight="Bold" Click="btnCompleteInfo_Click"/>
+        <TextBox Height="30" Margin="86,212,0,0" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top" Width="170" Background="{x:Null}" FontFamily="Segoe UI Black" FontSize="16" BorderThickness="0" VerticalContentAlignment="Center" HorizontalAlignment="Left" HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <TextBox x:Name="txtCSN" HorizontalAlignment="Left" Height="30" Margin="261,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="86,177,0,0" TextWrapping="Wrap" Text="CSN" VerticalAlignment="Top" Width="170" Background="{x:Null}" FontFamily="Segoe UI Black" FontSize="16" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <TextBox x:Name="txtAmount" HorizontalAlignment="Left" Height="30" Margin="261,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360"/>
 
     </Grid>
     <Window.Resources>

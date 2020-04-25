@@ -33,11 +33,16 @@ namespace DentalHospitalDatabase
 
         private void btnCompleteInfo_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Thank you for your payment.");
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
-
+            if (txtCSN.Text == "" || txtAmount.Text == "" || txtCSN.Text.Length != 9 ||  Convert.ToInt32(txtAmount.Text) < 0 )
+            {
+                MessageBox.Show("Amount or CSN is incorrect. PLease try again.");
+            }
+            else
+            {
+                MessageBox.Show("Thank you for your payment.");
+                txtAmount.Clear();
+                txtCSN.Clear();
+            }
             /*MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();*/

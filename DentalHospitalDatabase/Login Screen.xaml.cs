@@ -32,15 +32,26 @@ namespace DentalHospitalDatabase
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+
             if (txtUNInput.Text == "" || pwbInput.Password.Length == 0)
             {
                 MessageBox.Show("Please enter your Username and Password to continue");
             }
-            else
+            else if (txtUNInput.Text == "doctor")
+            {
+                Doctor doctor = new Doctor();
+                doctor.Show();
+                this.Close();
+            }
+            else if (txtUNInput.Text == "username")
             {
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
                 this.Close();
+            }
+            else if (txtUNInput.Text != "username" || txtUNInput.Text != "doctor")
+            {
+                MessageBox.Show("Incorrect Username or Passowrd");
             }
         }
 
