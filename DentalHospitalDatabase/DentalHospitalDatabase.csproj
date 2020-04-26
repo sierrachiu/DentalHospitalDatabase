@@ -15,6 +15,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -27,7 +28,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -98,26 +98,6 @@
     <Compile Include="CreateAppt.xaml.cs">
       <DependentUpon>CreateAppt.xaml</DependentUpon>
     </Compile>
-    <Compile Include="dbHospitalDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbHospitalDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dbHospitalDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbHospitalDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dbHospitalDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbHospitalDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dbHospitalDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbHospitalDataSet3.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Dental.xaml.cs">
       <DependentUpon>Dental.xaml</DependentUpon>
     </Compile>
@@ -171,50 +151,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="dbHospitalDataSet.xsc">
-      <DependentUpon>dbHospitalDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="dbHospitalDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbHospitalDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbHospitalDataSet.xss">
-      <DependentUpon>dbHospitalDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="dbHospitalDataSet1.xsc">
-      <DependentUpon>dbHospitalDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="dbHospitalDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbHospitalDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbHospitalDataSet1.xss">
-      <DependentUpon>dbHospitalDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="dbHospitalDataSet2.xsc">
-      <DependentUpon>dbHospitalDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="dbHospitalDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbHospitalDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbHospitalDataSet2.xss">
-      <DependentUpon>dbHospitalDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="dbHospitalDataSet3.xsc">
-      <DependentUpon>dbHospitalDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="dbHospitalDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbHospitalDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbHospitalDataSet3.xss">
-      <DependentUpon>dbHospitalDataSet3.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -248,12 +184,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dbHospital.mdf">
+    <Content Include="Hospital.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="dbHospital_log.ldf">
+    <Content Include="Hospital_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>dbHospital.mdf</DependentUpon>
+      <DependentUpon>Hospital.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
