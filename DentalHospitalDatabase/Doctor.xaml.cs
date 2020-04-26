@@ -22,11 +22,13 @@ namespace DentalHospitalDatabase
         public Doctor()
         {
             InitializeComponent();
+
+            PatientDataGrid.Opacity = 0;
         }
 
         private void btnPatient_Click(object sender, RoutedEventArgs e)
         {
-
+            PatientDataGrid.Opacity = 1;
         }
 
         private void btnBilling_Click(object sender, RoutedEventArgs e)
@@ -49,6 +51,17 @@ namespace DentalHospitalDatabase
             Login_Screen login_Screen = new Login_Screen();
             login_Screen.Show();
             this.Close();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            DentalHospitalDatabase.HospitalDataSet hospitalDataSet = ((DentalHospitalDatabase.HospitalDataSet)(this.FindResource("hospitalDataSet")));
+            // Load data into the table patient. You can modify this code as needed.
+            DentalHospitalDatabase.HospitalDataSetTableAdapters.patientTableAdapter hospitalDataSetpatientTableAdapter = new DentalHospitalDatabase.HospitalDataSetTableAdapters.patientTableAdapter();
+            hospitalDataSetpatientTableAdapter.Fill(hospitalDataSet.patient);
+            System.Windows.Data.CollectionViewSource patientViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("patientViewSource")));
+            patientViewSource.View.MoveCurrentToFirst();
         }
     }
 }

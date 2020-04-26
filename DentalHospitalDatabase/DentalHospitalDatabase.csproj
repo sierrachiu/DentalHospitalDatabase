@@ -104,6 +104,11 @@
     <Compile Include="Doctor.xaml.cs">
       <DependentUpon>Doctor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HospitalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login Screen.xaml.cs">
       <DependentUpon>Login Screen.xaml</DependentUpon>
     </Compile>
@@ -151,6 +156,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="HospitalDataSet.xsc">
+      <DependentUpon>HospitalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HospitalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HospitalDataSet.xss">
+      <DependentUpon>HospitalDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
