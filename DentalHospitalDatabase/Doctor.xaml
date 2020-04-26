@@ -5,15 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DentalHospitalDatabase"
         mc:Ignorable="d"
-        Title="Doctor" Height="450" Width="800">
-    <Grid Background="#FFBEEAFF">
-        <DataGrid HorizontalAlignment="Left" Height="308" Margin="202,101,0,0" VerticalAlignment="Top" Width="580"/>
+        Title="Doctor" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <local:dbHospitalDataSet x:Key="dbHospitalDataSet"/>
+        <CollectionViewSource x:Key="patientViewSource" Source="{Binding patient, Source={StaticResource dbHospitalDataSet}}"/>
+        <local:dbHospitalDataSet1 x:Key="dbHospitalDataSet1"/>
+        <CollectionViewSource x:Key="schedulingViewSource" Source="{Binding scheduling, Source={StaticResource dbHospitalDataSet1}}"/>
+        <local:dbHospitalDataSet2 x:Key="dbHospitalDataSet2"/>
+        <CollectionViewSource x:Key="schedulingViewSource1" Source="{Binding scheduling, Source={StaticResource dbHospitalDataSet2}}"/>
+        <CollectionViewSource x:Key="doctorViewSource" Source="{Binding doctor, Source={StaticResource dbHospitalDataSet2}}"/>
+        <local:dbHospitalDataSet3 x:Key="dbHospitalDataSet3"/>
+        <CollectionViewSource x:Key="billingViewSource" Source="{Binding billing, Source={StaticResource dbHospitalDataSet3}}"/>
+        <CollectionViewSource x:Key="doctorViewSource1" Source="{Binding doctor, Source={StaticResource dbHospitalDataSet3}}"/>
+    </Window.Resources>
+    <Grid Background="#FFBEEAFF" DataContext="{StaticResource patientViewSource}">
+        <DataGrid x:Name="PatientDataGrid" HorizontalAlignment="Left" Height="295" Margin="190,101,0,0" VerticalAlignment="Top" Width="575" ItemsSource="{Binding}"/>
+
+        <DataGrid x:Name="AppDataGrid" HorizontalAlignment="Left" Height="295" Margin="190,101,0,0" VerticalAlignment="Top" Width="575" ItemsSource="{Binding Source={StaticResource schedulingViewSource}}"/>
+
         <Button x:Name="btnPatients" Content="Patients" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Width="175" Height="50" Background="Transparent" BorderBrush="Transparent" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Click="btnPatients_Click"/>
         <Button x:Name="btnApp" Content="Appointments" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="175" Height="50" Background="Transparent" BorderBrush="Transparent" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Click="btnApp_Click"/>
         <Button x:Name="btnDoctors" Content="Doctors" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top" Width="175" Height="50" Background="Transparent" BorderBrush="Transparent" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Click="btnDoctors_Click"/>
         <Button x:Name="btnBilling" Content="Billing" HorizontalAlignment="Left" Margin="10,270,0,0" VerticalAlignment="Top" Width="175" Height="50" Background="Transparent" BorderBrush="Transparent" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Click="btnBilling_Click"/>
         <Label Content="Medical Staff View" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Height="86"  FontSize="40" FontFamily="Segoe UI Black" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Button x:Name="btnLogOut" Content="Log Out" HorizontalAlignment="Left" Margin="10,378,0,0" VerticalAlignment="Top" Width="175" RenderTransformOrigin="-0.661,11.709" Height="31" Background="{x:Null}" BorderThickness="0" FontFamily="Segoe UI Black" FontSize="16" Click="btnLogOut_Click"/>
+        <DataGrid x:Name="DocDataGrid" HorizontalAlignment="Left" Height="295" Margin="190,101,0,0" VerticalAlignment="Top" Width="575" ItemsSource="{Binding Source={StaticResource doctorViewSource1}}"/>
+        <DataGrid x:Name="BillingDataGrid" HorizontalAlignment="Left" Height="295" Margin="190,101,0,0" VerticalAlignment="Top" Width="575" ItemsSource="{Binding Source={StaticResource billingViewSource}}"/>
 
     </Grid>
 </Window>
