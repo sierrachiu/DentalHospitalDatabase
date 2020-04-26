@@ -51,7 +51,7 @@ namespace DentalHospitalDatabase
             }
             else if (txtUNInput.Text != "username" || txtUNInput.Text != "doctor")
             {
-                MessageBox.Show("Incorrect Username or Passowrd");
+                MessageBox.Show("Incorrect Username or Password");
             }
         }
 
