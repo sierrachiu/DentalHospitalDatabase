@@ -23,5 +23,32 @@ namespace DentalHospitalDatabase
         {
             InitializeComponent();
         }
+
+        private void btnPatient_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnBilling_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDoctor_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnApp_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            Login_Screen login_Screen = new Login_Screen();
+            login_Screen.Show();
+            this.Close();
+        }
     }
 }

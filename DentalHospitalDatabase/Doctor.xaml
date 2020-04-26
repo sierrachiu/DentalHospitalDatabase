@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="Doctor" Height="450" Width="800">
     <Grid Background="#FFBEEAFF">
-        
+        <Button x:Name="btnPatient" Content="Patients" HorizontalAlignment="Left" Margin="50,139,0,0" VerticalAlignment="Top" Width="147" Height="38" Padding="1" FontSize="16" FontFamily="Segoe UI Black" BorderThickness="0" Background="{x:Null}" Click="btnPatient_Click"/>
+        <Button x:Name="btnBilling" Content="Billing" HorizontalAlignment="Left" Margin="50,182,0,0" VerticalAlignment="Top" Width="147" Height="38" Padding="1" FontSize="16" FontFamily="Segoe UI Black" BorderThickness="0" Background="{x:Null}" Click="btnBilling_Click"/>
+        <Button x:Name="btnDoctor" Content="Doctors" HorizontalAlignment="Left" Margin="50,225,0,0" VerticalAlignment="Top" Width="147" Height="38" Padding="1" FontSize="16" FontFamily="Segoe UI Black" BorderThickness="0" Background="{x:Null}" Click="btnDoctor_Click"/>
+        <Button x:Name="btnApp" Content="Appointments" HorizontalAlignment="Left" Margin="50,268,0,0" VerticalAlignment="Top" Width="147" Height="38" Padding="1" FontSize="16" FontFamily="Segoe UI Black" BorderThickness="0" Background="{x:Null}" Click="btnApp_Click"/>
+        <Button x:Name="btnLogOut" Content="Log Out" HorizontalAlignment="Left" Margin="50,350,0,0" VerticalAlignment="Top" Width="147" Height="37" Padding="1" FontSize="16" FontFamily="Segoe UI Black" BorderThickness="0" Background="{x:Null}" Click="btnLogOut_Click"/>
+        <Label Content="Medical Professionals " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="88" Width="772" FontSize="30" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
     </Grid>
 </Window>
