@@ -9,6 +9,9 @@
     <Window.Resources>
         <local:HospitalDataSet x:Key="hospitalDataSet"/>
         <CollectionViewSource x:Key="patientViewSource" Source="{Binding patient, Source={StaticResource hospitalDataSet}}"/>
+        <CollectionViewSource x:Key="billingViewSource" Source="{Binding billing, Source={StaticResource hospitalDataSet}}"/>
+        <CollectionViewSource x:Key="doctorViewSource" Source="{Binding doctor, Source={StaticResource hospitalDataSet}}"/>
+        <CollectionViewSource x:Key="schedulingViewSource" Source="{Binding scheduling, Source={StaticResource hospitalDataSet}}"/>
     </Window.Resources>
     <Grid Background="#FFBEEAFF" DataContext="{StaticResource patientViewSource}">
         <Button x:Name="btnPatient" Content="Patients" HorizontalAlignment="Left" Margin="50,139,0,0" VerticalAlignment="Top" Width="147" Height="38" Padding="1" FontSize="16" FontFamily="Segoe UI Black" BorderThickness="0" Background="{x:Null}" Click="btnPatient_Click"/>
@@ -27,6 +30,9 @@
                 </TransformGroup>
             </DataGrid.RenderTransform>
         </DataGrid>
+        <DataGrid x:Name="BillingDataGrid" HorizontalAlignment="Left" Height="304" Margin="207,98,0,0" VerticalAlignment="Top" Width="567" ItemsSource="{Binding Source={StaticResource billingViewSource}}"/>
+        <DataGrid x:Name="DocDataGrid" HorizontalAlignment="Left" Height="304" Margin="207,98,0,0" VerticalAlignment="Top" Width="567" ItemsSource="{Binding Source={StaticResource doctorViewSource}}"/>
+        <DataGrid x:Name="AppDataGrid" HorizontalAlignment="Left" Height="304" Margin="207,98,0,0" VerticalAlignment="Top" Width="567" ItemsSource="{Binding Source={StaticResource schedulingViewSource}}"/>
 
     </Grid>
 </Window>
